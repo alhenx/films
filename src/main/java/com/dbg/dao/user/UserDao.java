@@ -12,3 +12,4 @@ import com.dbg.model.user.User;
 public interface UserDao extends PagingAndSortingRepository<User,Integer>{
 	public List<User> findNameLike(String name);
 }
+
