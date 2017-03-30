@@ -2,11 +2,21 @@ package com.dbg.model.film;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="film")
 public class Film implements Serializable{
 
 	private static final long serialVersionUID = -2883329025872466612L;
 	
+	@Id
+	@GeneratedValue
 	private Integer id;
+	
 	private String title;
 	private Integer year;
 	
